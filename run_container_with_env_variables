@@ -1,0 +1,14 @@
+docker run -e AWS_ACCESS_KEY_ID=your_key \
+           -e AWS_SECRET_ACCESS_KEY=your_secret \
+           -e AWS_DEFAULT_REGION=your_region \
+           -e S3_BUCKET=my-bucket \
+           -e CSV_KEY=my-data.csv \
+           -e RDS_ENDPOINT=my-rds-endpoint.rds.amazonaws.com \
+           -e RDS_USER=admin \
+           -e RDS_PASSWORD=yourpassword \
+           -e RDS_DB=mydb \
+           -e RDS_TABLE=mytable \
+           -e GLUE_DB=mygluedb \
+           -e GLUE_TABLE=myglue_table \
+           -e GLUE_S3_LOCATION=s3://my-bucket/data/ \
+           s3-to-rds-glue
