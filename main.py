@@ -49,7 +49,7 @@ def register_in_glue(df):
 def main():
     local_file = '/tmp/data.csv'
     download_csv_from_s3(os.environ['S3_BUCKET'], os.environ['S3_KEY'], local_file)
-    df = pd.read_csv(local_file)
+    df = pd.read_excel(local_file, engine='openpyxl')
 
     if not upload_to_rds(df):
         register_in_glue(df)
