@@ -3,25 +3,25 @@
 This project implements a Dockerized Python application that ingests data from a CSV file in Amazon S3, attempts to push it into an RDS MySQL-compatible database, and automatically falls back to AWS Glue if the RDS operation fails.
 
 📦 Goal
-Read CSV file from Amazon S3
+🔸Read CSV file from Amazon S3
 
-Attempt to push to Amazon RDS (MySQL-compatible)
+🔸Attempt to push to Amazon RDS (MySQL- compatible)
 
-If the RDS connection/upload fails:
+🔸If the RDS connection/upload fails:
 
-Automatically fall back to AWS Glue Data Catalog Register the dataset and schema based on S3 file
+🔸Automatically fall back to AWS Glue Data Catalog Register the dataset and schema based on S3 file
 
 🧰 AWS Services Used
 
-Amazon S3: Source for the CSV file
+🔸Amazon S3: Source for the CSV file
 
-Amazon RDS: MySQL-compatible database
+🔸Amazon RDS: MySQL-compatible database
 
-AWS Glue: Backup ingestion mechanism and catalog registration
+🔸AWS Glue: Backup ingestion mechanism and catalog registration
 
-IAM: Role-based access to S3 and Glue
+🔸IAM: Role-based access to S3 and Glue
 
-Docker: Containerization of the Python app
+🔸Docker: Containerization of the Python app
 
 🚀 Step 1: Set up AWS Services (S3, RDS, Glue)
 
