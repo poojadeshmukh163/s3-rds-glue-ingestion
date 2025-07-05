@@ -26,21 +26,25 @@ Docker: Containerization of the Python app
 🚀 Step 1: Set up AWS Services (S3, RDS, Glue)
 
 ✅ S3 Bucket
+
 1)Create bucket my-s3-data-bucket.
 
 2)Upload data.csv or data.xlsx
 
 ✅ RDS MySQL
+
 1)Create RDS MySQL database mydb.
 
 2)Enable public access.
 
 ✅ AWS Glue
+
 1)Create Glue Database.
 
 2)Create Crawler for S3 data.
 
 🚀 Step 2: Launch EC2 Instance
+
 1)Go to AWS EC2 Console.
 
 2)Click Launch Instance.
@@ -60,8 +64,11 @@ Docker: Containerization of the Python app
 🛠️ Install Docker
 
 sudo yum update -y
+
 sudo amazon-linux-extras install docker -y
+
 sudo service docker start
+
 sudo usermod -a -G docker ec2-user
 
 🛠️ Install Python 3
