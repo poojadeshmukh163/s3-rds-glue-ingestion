@@ -27,24 +27,34 @@ Docker: Containerization of the Python app
 
 ✅ S3 Bucket
 1)Create bucket my-s3-data-bucket.
+
 2)Upload data.csv or data.xlsx
 
 ✅ RDS MySQL
 1)Create RDS MySQL database mydb.
+
 2)Enable public access.
 
 ✅ AWS Glue
 1)Create Glue Database.
+
 2)Create Crawler for S3 data.
 
 🚀 Step 2: Launch EC2 Instance
 1)Go to AWS EC2 Console.
+
 2)Click Launch Instance.
+
 3)Select Amazon Linux 2 AMI.
+
 4)Choose t2.micro (Free Tier).
+
 5)Configure Security Group:
+
 6)Allow SSH (port 22), HTTP (80), and MySQL/Aurora (port 3306).
+
 7)Create a key pair (download my-key.pem).
+
 8)Launch.
 
 🛠️ Install Docker
